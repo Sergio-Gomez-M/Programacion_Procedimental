@@ -1,12 +1,12 @@
 .card {
     margin: 5%;
-    background-color: rgba(151, 151, 151, 0.829);
+    background-color: #4c8b76;
 }
 .tag {
     margin-top: 1.5%;
     margin-left: 10%;
     width: 80%;
-    background-color: rgb(207, 207, 207);
+    background-color: #92a56f;
 }
 .body{
     background-color: rgb(180, 180, 180);
