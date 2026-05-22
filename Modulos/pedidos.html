@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #4c8b76;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        .form-container {
+            background: #92a56f;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #4a4a4a;
+            font-size: 14px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus, .form-group select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Pedido</h2>
+    <form action="#" method="POST">
+        
+        <div class="form-group">
+            <label for="nombre">Producto</label>
+            <input type="text" id="Producto" name="Producto" required placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="apellido">Dirección</label>
+            <input type="text" id="Dirección" name="Dirección" required placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="telefono">Nombre del Usuario:</label>
+            <input type="tel" id="Nombre" name="Nombre" required placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="Metodo">Metodo de Pago</label>
+            <select id="Metodo" name="Metodo" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="CC">Tarjeta de Credito</option>
+                <option value="TI">Tarjeta de Debito</option>
+                <option value="CE">Efectivo</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="numero_documento">Pago</label>
+            <input type="text" id="Pago" name="Pago" required placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="correo">Telefono</label>
+            <input type="int" id="Telefono" name="Telefono" required placeholder="">
+        </div>
+
+
+        <button type="submit" class="btn-submit">Registrar</button>
+
+    </form>
+</div>
+
+</body>
+</html>
