@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #4c8b76;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        .form-container {
+            background: #92a56f;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #4a4a4a;
+            font-size: 14px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus, .form-group select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Formulario de Registro</h2>
+    <form action="#" method="POST">
+        
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required placeholder="Tu apellido">
+        </div>
+
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Ej: 3001234567">
+        </div>
+
+        <div class="form-group">
+            <label for="tipo_documento">Tipo de Documento:</label>
+            <select id="tipo_documento" name="tipo_documento" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="CC">Cédula de Ciudadanía</option>
+                <option value="TI">Tarjeta de Identidad</option>
+                <option value="CE">Cédula de Extranjería</option>
+                <option value="Pasaporte">Pasaporte</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="numero_documento">Número de Documento:</label>
+            <input type="text" id="numero_documento" name="numero_documento" required placeholder="Número de identificación">
+        </div>
+
+        <div class="form-group">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+        </div>
+
+        <div class="form-group">
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="" disabled selected>Selecciona tu género</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro / Prefiero no decirlo</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required placeholder="Ej: Desarrollador, Estudiante">
+        </div>
+
+        <div class="form-group">
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required placeholder="Crea una contraseña segura">
+        </div>
+
+        <button type="submit" class="btn-submit">Registrar</button>
+
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #4c8b76;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            background-color: #92a56f;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #34495e;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+        .btn-submit {
+            background-color: #2ecc71;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .btn-submit:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registro de Inventario</h2>
+    
+    <form action="#" method="POST">
+        
+        <div class="form-group">
+            <label for="codigo">Código de Producto:</label>
+            <input type="text" id="codigo" name="codigo" placeholder="Ej: PROD-1023" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nombre">Nombre del Producto:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Salsa de tomate" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="0" placeholder="Ej: 50" required>
+        </div>
+
+        <div class="form-group">
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" placeholder="Detalles del producto, empaque, etc."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" placeholder="Ej: Fruco" required>
+        </div>
+
+        <div class="form-group">
+            <label for="valor_unitario">Valor Unitario ($):</label>
+            <input type="number" id="valor_unitario" name="valor_unitario" min="0" step="0.01" placeholder="Ej: 4.50" required>
+        </div>
+
+        <div class="form-group">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="" disabled selected>Selecciona una categoría</option>
+                <option value="carnes">Carnes y Pescados</option>
+                <option value="verduras">Frutas y Verduras</option>
+                <option value="abarrotes">Abarrotes y Conservas</option>
+                <option value="lacteos">Lácteos y Quesos</option>
+                <option value="bebidas">Bebidas y Refrescos</option>
+                <option value="limpieza">Elementos de Limpieza</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="ubicacion">Ubicación en el Restaurante:</label>
+            <select id="ubicacion" name="ubicacion" required>
+                <option value="" disabled selected>Selecciona la ubicación</option>
+                <option value="nevera_1">Nevera Principal</option>
+                <option value="congelador">Congelador</option>
+                <option value="alacena_a">Alacena A (Secos)</option>
+                <option value="alacena_b">Alacena B (Líquidos)</option>
+                <option value="barra">Zona de Barra</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn-submit">Guardar en Inventario</button>
+
+    </form>
+</div>
+
+</body>
+</html>
