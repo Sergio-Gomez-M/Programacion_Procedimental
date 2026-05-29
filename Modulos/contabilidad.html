@@ -4,69 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuarios</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #4c8b76;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 20px;
-            margin: 0;
-        }
-        .form-container {
-            background: #92a56f;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 500px;
-        }
-        h2 {
-            text-align: center;
-            color: #333333;
-            margin-bottom: 25px;
-        }
-        .form-group {
-            margin-bottom: 18px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: 600;
-            color: #4a4a4a;
-            font-size: 14px;
-        }
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            box-sizing: border-box;
-            font-size: 14px;
-            transition: border-color 0.3s;
-        }
-        .form-group input:focus, .form-group select:focus {
-            border-color: #007bff;
-            outline: none;
-        }
-        .btn-submit {
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            border: none;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            margin-top: 10px;
-        }
-        .btn-submit:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/contabilidad.css">
 </head>
 <body>
 
@@ -94,9 +32,11 @@
             <input type="date" id="Fecha" name="Fecha" required>
         </div>
 
-        <button type="submit" class="btn-submit">Subir</button>
+        <a href="/index.html"><button type="submit" class="btn-submit">Subir</button></a>
 
     </form>
+    <a href="/index.html"><button type="button" class="btn-submit">Inicio</button></a>
+
 </div>
 
 </body>

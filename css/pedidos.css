@@ -1,69 +1,49 @@
-.card {
-    margin: 5%;
-    background-color: #4c8b76;
-}
-.tag {
-    margin-top: 1.5%;
-    margin-left: 10%;
-    width: 80%;
-    background-color: #92a56f;
-}
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #4c8b76;
-            margin: 0;
-            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 40px 20px;
+            margin: 0;
         }
         .form-container {
-            background-color: #92a56f;
+            background: #92a56f;
             padding: 30px;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             width: 100%;
-            max-width: 600px;
+            max-width: 500px;
         }
         h2 {
             text-align: center;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
+            color: #333333;
+            margin-bottom: 25px;
         }
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 18px;
         }
-        label {
+        .form-group label {
             display: block;
-            margin-bottom: 5px;
-            color: #34495e;
-            font-weight: bold;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #4a4a4a;
+            font-size: 14px;
         }
-        input[type="text"],
-        input[type="number"],
-        select,
-        textarea {
+        .form-group input, .form-group select {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 6px;
             box-sizing: border-box;
             font-size: 14px;
+            transition: border-color 0.3s;
         }
-        input[type="text"]:focus,
-        input[type="number"]:focus,
-        select:focus,
-        textarea:focus {
-            border-color: #3498db;
+        .form-group input:focus, .form-group select:focus {
+            border-color: #007bff;
             outline: none;
         }
-        textarea {
-            resize: vertical;
-            height: 80px;
-        }
-                .btn-submit {
+        .btn-submit {
             width: 100%;
             padding: 12px;
             background-color: #007bff;
