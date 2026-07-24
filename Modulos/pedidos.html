@@ -4,55 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedidos</title>
+
     <link rel="stylesheet" href="/css/pedidos.css">
+
 </head>
+
 <body>
 
 <div class="form-container">
-    <h2>Pedido</h2>
+
+    <h2>Registro de Pedidos</h2>
+
     <form action="#" method="POST">
-        
+
         <div class="form-group">
-            <label for="nombre">Producto</label>
-            <input type="text" id="Producto" name="Producto" required placeholder="">
+            <label>Código del Producto</label>
+            <input type="text" id="codigo" required>
         </div>
 
         <div class="form-group">
-            <label for="apellido">Dirección</label>
-            <input type="text" id="Dirección" name="Dirección" required placeholder="">
+            <label>Nombre del Producto</label>
+            <input type="text" id="producto" required>
         </div>
 
         <div class="form-group">
-            <label for="telefono">Nombre del Usuario:</label>
-            <input type="tel" id="Nombre" name="Nombre" required placeholder="">
+            <label>Dirección</label>
+            <input type="text" id="direccion" required>
         </div>
 
         <div class="form-group">
-            <label for="Metodo">Metodo de Pago</label>
-            <select id="Metodo" name="Metodo" required>
-                <option value="" disabled selected>Selecciona una opción</option>
-                <option value="CC">Tarjeta de Credito</option>
-                <option value="TI">Tarjeta de Debito</option>
-                <option value="CE">Efectivo</option>
+            <label>Nombre del Usuario</label>
+            <input type="text" id="usuario" required>
+        </div>
+
+        <div class="form-group">
+            <label>Cantidad</label>
+            <input type="text" id="cantidad" required>
+        </div>
+
+        <div class="form-group">
+
+            <label>Método de Pago</label>
+
+            <select id="metodo" required>
+
+                <option value="">Seleccione</option>
+                <option>Tarjeta de Crédito</option>
+                <option>Tarjeta de Débito</option>
+                <option>Efectivo</option>
+
             </select>
+
         </div>
 
         <div class="form-group">
-            <label for="numero_documento">Pago</label>
-            <input type="text" id="Pago" name="Pago" required placeholder="">
+            <label>Valor a Cancelar</label>
+            <input type="text" id="valor" required>
         </div>
 
         <div class="form-group">
-            <label for="correo">Telefono</label>
-            <input type="int" id="Telefono" name="Telefono" required placeholder="">
+            <label>Teléfono</label>
+            <input type="text" id="telefono" required>
         </div>
 
+        <button
+            type="button"
+            class="btn-submit"
+            onclick="ValidarDatos()">
 
-        <a href="/index.html"><button type="submit" class="btn-submit">Registrar</button></a>
+            Registrar Pedido
+
+        </button>
 
     </form>
-    <a href="/index.html"><button type="submit" class="btn-submit">Inicio</button></a>
+
+    <br>
+
+    <a href="/index.html">
+        <button type="button" class="btn-submit">
+            Inicio
+        </button>
+    </a>
+
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="/js/pedidos.js"></script>
 
 </body>
 </html>
